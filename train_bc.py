@@ -209,7 +209,6 @@ def train_model(
     output_path = MODELS_DIR / f"{model_id}.pt"
     scripted_model.save(str(output_path))
     print(f"Saved: {output_path}")
-    print("Submit ONLY this .pt file.")
 
 
 def main():
