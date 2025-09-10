@@ -97,23 +97,23 @@ python il_wrapper.py --record --episodes 20
 
 ```bash
 # Basic training with default parameters
-python train_bc.py --merge --train --student_id "my_model"
+python train_bc.py --merge --train --model_id "my_model"
 
 # Advanced training with custom hyperparameters
-python train_bc.py --train --student_id "advanced_model" \
+python train_bc.py --train --model_id "advanced_model" \
     --epochs 50 --batch 512 --lr 0.001 --hidden 128
 ```
 
 **Parameters:**
 - `--merge`: Process recorded sessions into training dataset
 - `--train`: Train a behavior cloning model
-- `--student_id`: Model identifier (used for output filename)
+- `--model_id`: Model identifier (used for output filename)
 - `--epochs`: Number of training epochs (default: 10)
 - `--batch`: Batch size (default: 256)
 - `--lr`: Learning rate (default: 1e-3)
 - `--hidden`: Hidden layer size (default: 64)
 
-**Output:** Trained model in `models/student_id.pt`
+**Output:** Trained model in `models/model_id.pt`
 
 ### Model Evaluation (`eval_leaderboard.py`)
 
@@ -187,7 +187,7 @@ flappy-bird-python/
 ## Credits
 
 - Game engine references
-  - [repo](https://github.com/LeonMarqs/Flappy-bird-python), 
+  - [repo](https://github.com/LeonMarqs/Flappy-bird-python) 
   - [video](https://www.youtube.com/watch?v=UZg49z76cLw&list=PL8ui5HK3oSiF7ZFfwYokCD5myWYhGH24A)
 - ChatGPT for code assist, documentation and PEP 8 conventions 
 - Original Flappy Bird game by Dong Nguyen
