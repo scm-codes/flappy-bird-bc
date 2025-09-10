@@ -1,4 +1,4 @@
-# Flappy Bird Python - Behavior Cloning Implementation
+# Flappy Bird Behavior Cloning
 
 A Flappy Bird game implementation in Python with behavior cloning (imitation learning) capabilities. This project allows you to record human gameplay data and train neural networks to imitate human behavior.
 
